@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitio de Aplicaciones</title>
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <h1>Pokédex</h1>
+        <div id="searchForm">
+            <div class="mb-3">
+                <label for="searchInput" class="form-label">Buscar Pokémon:</label>
+                <input type="text" class="form-control" id="searchInput">
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-primary" id="randomButton">Buscar por ID Aleatoria</button>
+                <button class="btn btn-primary" id="searchButton">Buscar por Nombre</button>
+            </div>
+        </div>
+        <div id="pokemonInfo" style="display: none;">
+            <!-- Ficha del pokemón -->
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
